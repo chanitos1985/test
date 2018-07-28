@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">llenar vector</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    var r;
+    var json={};
+    var array= [];
+    var i =0;
+    var j =0;
+    var s =0;
+    var suma = 0;
+    s=prompt("Escriba el tamaño del vector");
+    console.log(s);
+    if (s > 0 ){
+        do{
+            j = i+1;
+            array[i]=prompt("Escriba por favor el valor del array"+" "+j);
+            console.log("i="+i+"nota"+array[i]);
+            i++;
+            if (i == s) {
+                for(j=0;j<array.length;j++){
+                    json["obj"+j] = array[j];
+                    suma = parseInt(suma)+parseInt(array[j]);
+                }
+                if (array.length != 0){
+                  suma = suma/(array.length);
+                }
+                console.log(json);
+                txt = "Ya termino json = "+JSON.stringify(json)+ "es es el promedio: "+ suma;
+            }
+        }while(i < s);
+        
+        document.getElementById("demo").innerHTML = txt;  
+    }
+}
+</script>
+
+</body>
+</html>

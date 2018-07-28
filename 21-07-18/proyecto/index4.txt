@@ -1,0 +1,46 @@
+var name=[];
+var age=[];
+name.push('sulfikar');
+age.push('24');
+var ent={};
+for(var i=0;i<name.length;i++)
+{
+ent.name=name[i];
+ent.age=age[i];
+}
+JSON.Stringify(ent);
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+var foo = {
+    "name" : "Muzzy",
+    "genre" : "Animation",
+    "year" : "1986",
+    "characters" : [ "Muzzy", "King", "Queen", "Pricess Sylvia" ]
+};
+ 
+var bar = foo;
+bar[ 'name' ] = "Muzzy in Gondoland";
+ 
+console.log( foo[ 'name' ] ); // Muzzy in Gondoland
+console.log( bar[ 'name' ] ); // Muzzy in Gondoland
+
+
+var bar = JSON.parse( JSON.stringify( foo ) );
+ 
+bar[ 'name' ] = "Muzzy in Gondoland";
+ 
+console.log( foo[ 'name' ] ); // Muzzy
+console.log( bar[ 'name' ] ); // Muzzy in Gondoland
+
+</script>
+
+</body>
+</html>

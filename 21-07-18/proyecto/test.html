@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <title>JS NAME</title>
+        </head>        
+<body>
+    <p>Click the button to demonstrate line-breaks in a confirm box.</p>
+
+    <button onclick="names()">Ingresar un vector </button>
+    <p id="demo"></p>
+    <script>
+        function names() {
+            var array1 ;
+            var array1 = new Array();
+            var cont = '';
+            var x;
+            var promedio=0;
+
+            var suma=0;
+            var j;
+            var y;
+            for (i = 0; i < 102; i++) {
+                for (j = 0; j <= 2; j++) {
+                    x = prompt("Ingresa el valor del vector"+(i+1)+ " "+ "columna "+j);
+                    array1[i,j] = x;
+                    if (j == 2){
+                        suma = parseInt(suma) + parseInt(array1[i,j]);
+                    }
+                }
+            }
+            promedio = suma/10;
+            document.getElementById("demo").innerHTML = suma;
+            alert("este es el "+promedio);
+        }                      
+    </script>
+</body>
+</html>

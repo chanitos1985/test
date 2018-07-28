@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <script type="text/javascript">
+  function promedio(){ 
+    var prom;
+    var suma=0;
+    var arraynote = new Array;
+    var i =0;
+    while (i<7) {
+        var j=i+1;
+        arraynote[i]=prompt("Escriba por favor la nota #"+" "+j);
+        console.log("i="+i+"nota"+arraynote[i]);
+        if (arraynote[i]==0) {
+            alert("hay una nota en cero");
+            break;
+        }
+        i++;
+    } 
+       
+    for (let i = 0; i < arraynote.length; i++) 
+    {
+        suma = suma + parseFloat(arraynote[i]);
+        
+    }
+    prom=suma/arraynote.length; document.form1.informe.value=prom; 
+  }
+  </script>
+</head>
+<body>
+        <H1>CALCULAR PROMEDIO</H1>
+        <form name="form1" method="post" action=""> 
+        Promedio <INPUT name="informe" type="text">
+        <br>
+        <input type="button" name="Submit" value="calcular" onclick="promedio()"> 
+        <input type="reset" name="Submit2" value="Restablecer">
+        </form> 
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+#  ingresar fecha de nasimiento y comparar con fecha actual
+
+
+calcular si ya se cumplio la fecha de cumpleaños 
+
+
+
+
+for i  in (0..x)
+()0.. .each do [i,value]
+
+until () do 
+end 
+
+
+igresar valores numericos e ir guardando resualtado een variable suma 
+si se ingrea el valor cero se suma valor total ingresado y salir 
+del ejercicio 
+
+
+ingrear variable  
+variable =0
+
+
+suma += variable 
+
+return suma 
+
+
+entregable documento antecedente
+que donde cuando porque 
+
+documentacion  prtotipo
+manera inatakacon 
+mapaedo 
+manual de perfiles 
+pruenas ralizadas 
+
+se debe hablar con la zona o alcaldia local 
+depende el proyecto 
+
+
+
+instalaer 
+pstgres para proxima clase 
+MySQLworbench
+
+
+
+
+
+
+def suma 
+
+        setpoint=0
+        total = :va1+:va2+:va3
+        
+        result= total
+
+    end 
+
+
+result = Saludo.new
+
+p "ingrese valor 1"
+num = gets.to_i
+result.num=num
+
+p result.calcular

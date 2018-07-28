@@ -1,0 +1,30 @@
+myHero {
+    display: block;
+    background-color: #dddddd;
+    padding: 20px;
+    font-size: 15px;
+} 
+div#header, div#footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+footer,article {
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 8px;
+}
+H1.nuevaclase { color:red; }
+.nuevaclase2 {
+    color:blue;
+    font-size: 15px
+}
+li{
+    color: blue;
+}
+li[data-grado='C'] {
+    color: magenta;
+}
+#U-1{
+    color : green;
+}

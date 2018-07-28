@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>     
+    <button onclick="names()">Ingresar una matriz </button>
+    <p id="demo"></p>
+    <script>
+        function names() {
+            var array1 ;
+            var array1 = new Array();
+            var cont = '';
+            var x;
+            var promedio=0;
+
+            var suma=0;
+            var j;
+            var y;
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j <= 2; j++) {
+                    x = prompt("Ingresa el valor del vector"+(i+1)+ " "+ "columna "+j);
+                    array1[i,j] = x;
+                    if (j == 2){
+                        suma = parseInt(suma) + parseInt(array1[i,j]);
+                    }
+                }
+            }
+            promedio = suma/10;
+            alert("esta es la suma: "+suma);
+            alert("este es el promedio:  "+promedio);
+        }                      
+    </script>
+</body>
+</html>

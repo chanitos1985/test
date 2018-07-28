@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to demonstrate line-breaks in a confirm box.</p>
+
+<button onclick="myFunction()">Ingresar un vector</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    var r;
+    var json={};
+    var array= [];
+    var i =0;
+    var j =0;
+    var s;
+    var suma= 0;
+    do{
+        j = i+1;
+        array[i]=prompt("Escriba por favor el valor del array"+" "+j);
+        console.log("i="+i+"nota"+array[i])
+        i++;
+            
+        r = confirm("Presione ok para seguir ingresando valores del vector o presione cancel para terminar");
+        if (r == false) {
+            for(i=0;i<array.length;i++){
+                json["obj"+i] = array[i];
+                suma = parseInt(suma)+parseInt(array[i]);
+            }
+            if (array.length != 0){
+                suma = suma/(array.length);
+            }
+            console.log(json);
+            txt = "Ya termino json = "+JSON.stringify(json) + "es es el promedio: "+ suma;
+        }
+    }while(r == true);
+    
+    document.getElementById("demo").innerHTML = txt;  
+     
+}
+</script>
+
+</body>
+</html>
